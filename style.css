@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #494399;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+}
+
+h1, h3, p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: 0px auto;
+}
+
+.header-content{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content *{
+    transition: .5s;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline;
+    margin-left: 10px;
+}
+
+ul img{
+    height: 30px;
+    width: auto;
+    opacity: .7;
+    transition: .5s;
+}
+
+header img:hover{
+    opacity: 1;
+}
+
+
+.burger-icon{
+    height: 18px;
+    width: auto;
+    opacity: .8;
+}
+
+.logo{
+    height: 35px;
+    width: auto;
+    opacity: .5;
+}
+
+.bg-rect{
+    width: 24vw;
+    height: 100%;
+    background-color: #2CCCC4;
+    position: absolute;
+    z-index: -999;
+    left: 20%;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 3.5em;
+    line-height: 1.5em;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+
+.hero{
+    padding: 0px 0px 150px 2.5em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.hero img{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+h3{
+    opacity: .6;
+    letter-spacing: .2em;
+    margin-left: -50px;
+}
+
+.side-text p{
+    font-size: .8em;
+    line-height: 1.5em;
+    opacity: .8;
+    margin: 1.2em 0px;
+}
+
+.more{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white;
+    letter-spacing: .2em;
+    opacity: .8;
+    border-bottom: 1px solid rgba(255,255,255,.8);
+    padding-bottom: 5px;
+    transition: .5s;
+}
+
+.more:hover{
+    letter-spacing: .4em;
+    opacity: 1;
+    border-bottom-color:rgb(255,255,255);
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-text{
+    padding: 2.5em;
+}
+
+footer{
+    background-color: #333333;
+    padding: 50px;
+}
+
+footer p {
+    opacity: .7;
+    width: 30%;
+    margin: 0 auto;
+    font-size: .7em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+@media (max-width: 1140px){
+    .header-nav{
+        width: 22%;
+    }
+
+    .side-text{
+        padding-right: .5em;
+    }
+
+    .hero{
+        padding-left: .5em;
+    }
+    h1{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 920px){
+    .main-content{
+        flex-direction: column;
+    }
+
+    .header-nav{
+        width: 50%;
+    }
+
+    .hero{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .bg-rect{
+        width: 30vw;
+        left: 31%;
+    }
+
+    footer p {
+        width: 60%;
+    }
+
+    .h1-wrap{
+        width: 80%; 
+        margin: 0 auto;
+        text-align: left;
+    }
+    .aside{
+        width: 80%;
+        padding: 0px 0px 0px 10px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 760px){
+    h1{
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 560px){
+    h1{
+        font-size: 2em;
+    }
+
+    ul img{
+        height: 25px;
+        width: auto;
+    }
+
+    footer p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px){
+    .bg-rect{
+        width: 40vw;
+        left: 26.5%;
+    }
+    .header-content{
+        width: 90%;
+    }
+
+    ul img{
+        height: 20px;
+        width: auto;
+    }
+
+    .burger-icon{
+        height: 13px;
+        width: auto;
+    }
+
+    .logo{
+        height: 30px;
+        width: auto;
+    }
+
+
+    ul li{
+        margin-left: 3px;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    .main-content{
+        width: 90%;
+    }
+}
+
+@media (min-width: 1600px){
+    .side-text{
+        padding: 4em;
+    }
+
+    h3{
+        font-size: 1.1em;
+    }
+    
+    .side-text p{
+        font-size: .9em;
+    }
+    
+    .more{
+        font-size: 1em;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    .header-nav{
+        width: 14%;
+    }
+    
+}
