@@ -12,7 +12,15 @@
         <div class="header-content container">
             <img src="./img/logo.png" alt="" class="logo">
             <div class="header-nav">
-                <a href=""><img src="./img/burger.png" alt="" class="burger-icon"></a>
+
+                <div class="dropdown">
+                    <img src="./img/burger.png" alt="" class="burger-icon" onclick="toggleBurger()">
+                    <div id="drop" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
                 <ul>
                     <li><a href="https://uk-ua.facebook.com/" target="_blank"><img src="./img/fb_icon.png" alt=""></a></li>
                     <li><a href="https://twitter.com/?lang=ua" target="_blank"><img src="./img/twitter_icon.png" alt=""></a></li>
@@ -47,5 +55,6 @@
     <footer>
         <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
