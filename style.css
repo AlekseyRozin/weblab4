@@ -12,7 +12,6 @@ h1, h3, p{
 }
 
 .container{
-    /* border: 1px solid red; */
     width: 80%;
     margin: 0px auto;
 }
@@ -63,6 +62,35 @@ header img:hover{
     width: auto;
     opacity: .8;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -1px;
+    background-color: #35325D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgba(255,255,255,.6);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #4e4a87;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+  
 
 .logo{
     height: 35px;
